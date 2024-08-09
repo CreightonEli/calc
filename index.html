@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="dist/style.css">
+  <!-- Scripts -->
+   <script src="script.js"></script>
+</head>
+<body>
+
+  <main>
+    <header>
+      <h1>calc</h1>
+      <div id="toggle-container">
+        <p>THEME</p>
+        <div id="toggle-block">
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          <div id="toggle-btn">
+            <div id="toggle-switch"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="screen-el">0</div>
+
+    <div id="key-container">
+      <button id="btn-7">7</button>
+      <button id="btn-8">8</button>
+      <button id="btn-9">9</button>
+      <button id="btn-del" onclick="del()">DEL</button>
+      <button id="btn-4">4</button>
+      <button id="btn-5">5</button>
+      <button id="btn-6">6</button>
+      <button id="btn-add" onclick="add()">+</button>
+      <button id="btn-1">1</button>
+      <button id="btn-2">2</button>
+      <button id="btn-3">3</button>
+      <button id="btn-sub" onclick="sub()">-</button>
+      <button id="btn-dec">.</button>
+      <button id="btn-0">0</button>
+      <button id="btn-div" onclick="div()">/</button>
+      <button id="btn-mult" onclick="mult()">x</button>
+      <button id="btn-reset" onclick="reset()">RESET</button>
+      <button id="btn-equal" onclick="equal()">=</button>
+    </div>
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://creightoneli.github.io/" target="_blank">Elijah Creighton</a>.
+  </div> -->
+</body>
+</html>

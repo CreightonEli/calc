@@ -1,0 +1,119 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg);
+    color: var(--text-light);
+    padding: 20px;
+}
+
+main {
+    max-width: 600px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+h1 {
+    margin: 6px 0 0;
+}
+
+#toggle-container {
+    margin: 0 0 0 auto;
+    display: flex;
+    font-size: 10pt;
+}
+#toggle-container p {
+    margin: 24px 28px 0 0;
+}
+#toggle-block {
+    margin: 0;
+    padding: 0;
+    width: 74px;
+}
+#toggle-block ul {
+    display: flex;
+    margin: 0 0 2px;
+    padding: 0;
+}
+#toggle-block ul li {
+    list-style: none;
+    margin: 0 9px;
+}
+
+#toggle-btn {
+    padding-top: 1px;
+    background-color: var(--btn-bg);
+    height: 25px;
+    width: 100%;
+    border-radius: 2em;
+    cursor: pointer;
+}
+#toggle-switch {
+    margin: 4px 0 0 5px;
+    background-color: var(--key-bg-2);
+    height: 16px;
+    width: 16px;
+    border-radius: 2em;
+}
+
+#screen-el {
+    background-color: var(--screen-bg);
+    font-size: 32pt;
+    text-align: right;
+    margin: 20px 0 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#key-container {
+    display: grid;
+    grid: 
+    "a b c d" 55px
+    "e f g h" 55px
+    "i j k l" 55px
+    "m n o p" 55px
+    "q q r r" 55px;
+    gap: 16px 10px;
+    background-color: var(--btn-bg);
+    margin: 20px auto 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+#key-container button {
+    background-color: var(--key-bg-3);
+    color: var(--text-dark);
+    border: none;
+    border-bottom: 3px solid var(--key-shadow-3);
+    border-radius: 5px;
+    width: 55px;
+    height: 60px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 24pt;
+    font-weight: 700;
+    padding: 6px 0 0;
+}
+
+#key-container #btn-del {
+    background-color: var(--key-bg-1);
+    color: var(--text-light);
+    border-color: var(--key-shadow-1);
+    font-size: 16pt;
+}
+#key-container #btn-reset {
+    width: 100%;
+    background-color: var(--key-bg-1);
+    color: var(--text-light);
+    border-color: var(--key-shadow-1);
+    grid-column: span 2;
+    font-size: 16pt;
+}
+#key-container #btn-equal {
+    width: 100%;
+    background-color: var(--key-bg-2);
+    color: var(--text-light);
+    border-color: var(--key-shadow-2);
+    grid-column: span 2;
+    font-size: 16pt;
+}
