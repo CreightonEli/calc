@@ -14,7 +14,7 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="dist/style.css">
   <!-- Scripts -->
-   <script src="script.js"></script>
+   <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -29,30 +29,32 @@
             <li>2</li>
             <li>3</li>
           </ul>
-          <div id="toggle-btn">
+          <button id="toggle-btn">
             <div id="toggle-switch"></div>
-          </div>
+          </button>
         </div>
       </div>
     </header>
 
-    <div id="screen-el">0</div>
+    <div id="screen-el">
+      <span id="screen-num">0</span>
+    </div>
 
     <div id="key-container">
-      <button id="btn-7">7</button>
-      <button id="btn-8">8</button>
-      <button id="btn-9">9</button>
+      <button id="btn-7" onclick="concat(7)"><p>7</p></button>
+      <button id="btn-8" onclick="concat(8)"><p>8</p></button>
+      <button id="btn-9" onclick="concat(9)"><p>9</p></button>
       <button id="btn-del" onclick="del()">DEL</button>
-      <button id="btn-4">4</button>
-      <button id="btn-5">5</button>
-      <button id="btn-6">6</button>
+      <button id="btn-4" onclick="concat(4)"><p>4</p></button>
+      <button id="btn-5" onclick="concat(5)"><p>5</p></button>
+      <button id="btn-6" onclick="concat(6)"><p>6</p></button>
       <button id="btn-add" onclick="add()">+</button>
-      <button id="btn-1">1</button>
-      <button id="btn-2">2</button>
-      <button id="btn-3">3</button>
+      <button id="btn-1" onclick="concat(1)"><p>1</p></button>
+      <button id="btn-2" onclick="concat(2)"><p>2</p></button>
+      <button id="btn-3" onclick="concat(3)"><p>3</p></button>
       <button id="btn-sub" onclick="sub()">-</button>
-      <button id="btn-dec">.</button>
-      <button id="btn-0">0</button>
+      <button id="btn-dec" onclick="concat('.')">.</button>
+      <button id="btn-0" onclick="concat(0)">0</button>
       <button id="btn-div" onclick="div()">/</button>
       <button id="btn-mult" onclick="mult()">x</button>
       <button id="btn-reset" onclick="reset()">RESET</button>

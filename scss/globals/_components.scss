@@ -48,14 +48,16 @@ h1 {
     height: 25px;
     width: 100%;
     border-radius: 2em;
+    border: none;
     cursor: pointer;
 }
 #toggle-switch {
-    margin: 4px 0 0 5px;
+    margin: 3px 0;
     background-color: var(--key-bg-2);
-    height: 16px;
-    width: 16px;
+    height: 17px;
+    width: 17px;
     border-radius: 2em;
+    transition: filter 355ms ease;
 }
 
 #screen-el {
@@ -63,8 +65,11 @@ h1 {
     font-size: 32pt;
     text-align: right;
     margin: 20px 0 0;
-    padding: 20px;
+    padding: 20px 20px 16px;
     border-radius: 10px;
+}
+#screen-num {
+    margin: auto auto 0;
 }
 
 #key-container {
@@ -93,6 +98,11 @@ h1 {
     font-size: 24pt;
     font-weight: 700;
     padding: 6px 0 0;
+    transition: filter 355ms ease;
+    cursor: pointer;
+}
+#key-container button p {
+    margin: 0;
 }
 
 #key-container #btn-del {
