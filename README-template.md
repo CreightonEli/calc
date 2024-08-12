@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://creightoneli.github.io/)
-- Live Site URL: [Add live site URL here](https://creightoneli.github.io/)
+- Solution URL: [https://www.frontendmentor.io/solutions/calculator-app-cZfHkhtaew](https://www.frontendmentor.io/solutions/calculator-app-cZfHkhtaew/)
+- Live Site URL: [https://creightoneli.github.io/calc](https://creightoneli.github.io/calc/)
 
 ## My process
 
