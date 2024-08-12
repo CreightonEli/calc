@@ -1,19 +1,123 @@
-:root {
-    // Theme 1
+// :root {
+    // // Theme 1
+    // // Backgrounds
+    // --main-bg: hsl(222, 26%, 31%);
+    // --btn-bg: hsl(223, 31%, 20%);
+    // --screen-bg: hsl(224, 36%, 15%);
+    
+    // // Keys
+    // --key-bg-1: hsl(225, 21%, 49%);
+    // --key-shadow-1: hsl(224, 28%, 35%);
+    // --key-bg-2: hsl(6, 63%, 50%);
+    // --key-shadow-2: hsl(6, 70%, 34%);
+    // --key-bg-3: hsl(30, 25%, 89%);
+    // --key-shadow-3: hsl(28, 16%, 65%);
+
+    // // Keys (active states)
+    // --key-bg-1-as: hsl(225, 21%, 59%);
+    // --key-bg-2-as: hsl(6, 63%, 60%);
+    // --key-bg-3-as: hsl(30, 25%, 99%);
+
+    // // Text
+    // --text-dark: hsl(221, 14%, 31%);
+    // --text-light: hsl(0, 0%, 100%);
+// }
+
+:root[data-theme = "theme-1"] {
     // Backgrounds
-    --main-bg: hsl(222, 26%, 31%); // Very dark desaturated blue
-    --btn-bg: hsl(223, 31%, 20%); // Very dark desaturated blue
-    --screen-bg: hsl(224, 36%, 15%); // Very dark desaturated blue
+    --main-bg: hsl(222, 26%, 31%);
+    --btn-bg: hsl(223, 31%, 20%);
+    --screen-bg: hsl(224, 36%, 15%);
     
     // Keys
-    --key-bg-1: hsl(225, 21%, 49%); // Desaturated dark blue
-    --key-shadow-1: hsl(224, 28%, 35%); // Desaturated dark blue
-    --key-bg-2: hsl(6, 63%, 50%); // Red
-    --key-shadow-2: hsl(6, 70%, 34%); // Dark red
-    --key-bg-3: hsl(30, 25%, 89%); // Light grayish orange
+    --key-bg-1: hsl(225, 21%, 49%);
+    --key-shadow-1: hsl(224, 28%, 35%);
+    --key-bg-2: hsl(6, 63%, 50%);
+    --key-shadow-2: hsl(6, 70%, 34%);
+    --key-bg-3: hsl(30, 25%, 89%);
     --key-shadow-3: hsl(28, 16%, 65%);
 
+    // Keys (active states)
+    --key-bg-1-as: hsl(225, 27%, 66%);
+    --key-bg-2-as: hsl(6, 78%, 64%);
+    --key-bg-3-as: hsl(0, 0%, 100%);
+
     // Text
-    --text-dark: hsl(221, 14%, 31%); // Very dark grayish blue
-    --text-light: hsl(0, 0%, 100%); // White
+    --text-dark: hsl(221, 14%, 31%);
+    --text-light: hsl(0, 0%, 100%);
+}
+
+:root[data-theme = "theme-2"] {
+    // Backgrounds
+    --main-bg: hsl(0, 0%, 90%);
+    --btn-bg: hsl(0, 5%, 81%);
+    --screen-bg: hsl(0, 0%, 93%);
+    
+    // Keys
+    --key-bg-1: hsl(185, 42%, 37%);
+    --key-shadow-1: hsl(185, 58%, 25%);
+    --key-bg-2: hsl(25, 98%, 40%);
+    --key-shadow-2: hsl(25, 99%, 27%);
+    --key-bg-3: hsl(45, 7%, 89%);
+    --key-shadow-3: hsl(35, 11%, 61%);
+
+    // Keys (active states)
+    --key-bg-1-as: hsl(185, 42%, 58%);
+    --key-bg-2-as: hsl(25, 98%, 62%);
+    --key-bg-3-as: hsl(45, 7%, 99%);
+
+    // Text
+    --text-dark: hsl(60, 10%, 19%);
+    --text-light: hsl(0, 0%, 100%);
+
+    // set
+    color: var(--text-dark);
+
+    ::selection {
+        background-color: var(--key-bg-2-as);
+    }
+
+    #toggle-switch {
+        transform: translateX(22px);
+    }
+}
+
+:root[data-theme = "theme-3"] {
+    // Backgrounds
+    --main-bg: hsl(268, 75%, 9%);
+    --btn-bg: hsl(268, 71%, 12%);
+    --screen-bg: hsl(268, 71%, 12%);
+    
+    // Keys
+    --key-bg-1: hsl(281, 89%, 26%);
+    --key-shadow-1: hsl(285, 91%, 52%);
+    --key-bg-2: hsl(176, 100%, 44%);
+    --key-shadow-2: hsl(177, 92%, 70%);
+    --key-bg-3: hsl(268, 47%, 21%);
+    --key-shadow-3: hsl(290, 70%, 36%);
+
+    // Keys (active states)
+    --key-bg-1-as: hsl(281, 89%, 46%);
+    --key-bg-2-as: hsl(176, 100%, 74%);
+    --key-bg-3-as: hsl(268, 47%, 41%);
+
+    // Text
+    --text-dark: hsl(52, 100%, 62%);
+    --text-light: hsl(0, 0%, 100%);
+    --text-dark-2: hsl(198, 20%, 13%);
+
+    // set
+    color: var(--text-dark);
+
+    ::selection {
+        background-color: var(--key-bg-1-as);
+    }
+
+    #key-container #btn-equal {
+        color: var(--text-dark-2);
+    }
+
+    #toggle-switch {
+        transform: translateX(44px);
+    }
 }

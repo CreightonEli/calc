@@ -1,0 +1,50 @@
+@media (min-width: 1281px) {
+    main {
+        margin: 92px auto;
+    }
+    
+    h1 {
+        margin: 14px 8px 0;
+    }
+
+    #toggle-container p {
+        margin: 28px 27px 0 0;
+    }
+    
+    #toggle-block ul {
+        margin: 2px 0 2px;
+    }
+
+    #toggle-block ul li {
+        font-size: 11pt;
+    }
+
+    #screen-el {
+        font-size: 41pt;
+        padding: 32px 32px 30px;
+    }
+
+    #key-container {
+        padding: 21px 30px 19px;
+    }
+    
+    #key-container .key-row {
+        margin: 10px 0 18px;
+    }
+
+    #key-container button {
+        border-radius: 10px;
+        margin: 0 0 0 24px;
+    }
+    #key-container button p {
+        font-size: 30pt;
+    }
+
+    #key-container #btn-del p {
+        font-size: 20pt;
+    }
+    
+    #key-container #btn-reset p {
+        font-size: 20pt;
+    }    
+}

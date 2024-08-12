@@ -1,9 +1,56 @@
-#toggle-btn:hover #toggle-switch {
-    filter: brightness(2);
+// transitions
+
+#toggle-switch {
+    transition: 355ms ease;
 }
-// button:not(#toggle-btn):hover {
-//     filter: brightness(2);
-// }
-// button:not(#toggle-btn):hover p {
-//     filter: brightness(0.5);
-// }
+#key-container button {
+    transition: 355ms ease;
+}
+
+// hover/focus changes
+#toggle-btn:hover #toggle-switch, #toggle-btn:focus #toggle-switch {
+    background-color: var(--key-bg-2-as);
+}
+
+#key-container button:hover, #key-container button:focus {
+    background-color: var(--key-bg-3-as);
+}
+
+#key-container #btn-del:hover, #key-container #btn-del:focus {
+    background-color: var(--key-bg-1-as);
+}
+
+#key-container #btn-reset:hover, #key-container #btn-reset:focus {
+    background-color: var(--key-bg-1-as);
+}
+
+#key-container #btn-equal:hover, #key-container #btn-equal:focus {
+    background-color: var(--key-bg-2-as);
+}
+
+// active changes
+#key-container button:active,
+#key-container #btn-del:active,
+#key-container #btn-reset:active,
+#key-container #btn-equal:active {
+    box-shadow: 0 0 0 #00000000;
+    transform: translateY(4px);
+}
+
+// animations
+main {
+    opacity: 0;
+    animation: 355ms cubic-bezier(0.165, 0.84, 0.44, 1) 355ms forwards fade-in;
+}
+
+// keyframes
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

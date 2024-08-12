@@ -3,11 +3,24 @@ html {
     padding: 0;
     background-color: var(--main-bg);
     color: var(--text-light);
-    padding: 20px;
+    transition: 355ms ease;
+}
+
+::selection {
+    background-color: var(--key-bg-2-as);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 24px;
 }
 
 main {
-    max-width: 600px;
+    max-width: 540px;
+    margin: 0 auto;
 }
 
 header {
@@ -15,57 +28,62 @@ header {
     flex-direction: row;
     height: 50px;
 }
+
 h1 {
-    margin: 6px 0 0;
+    margin: 10px 8px 0;
+    font-size: 23pt;
 }
 
 #toggle-container {
     margin: 0 0 0 auto;
     display: flex;
-    font-size: 10pt;
 }
 #toggle-container p {
-    margin: 24px 28px 0 0;
+    margin: 30px 27px 0 0;
+    font-size: 9pt;
+    letter-spacing: 1px;
 }
 #toggle-block {
     margin: 0;
     padding: 0;
-    width: 74px;
+    width: 71px;
 }
 #toggle-block ul {
     display: flex;
-    margin: 0 0 2px;
-    padding: 0;
+    margin: 4px 0 4px;
+    padding: 0px 2px 0;
 }
 #toggle-block ul li {
+    font-size: 9pt;
+    font-weight: bold;
     list-style: none;
-    margin: 0 9px;
+    margin: 0 auto;
 }
 
 #toggle-btn {
-    padding-top: 1px;
+    padding: 1px 5px;
     background-color: var(--btn-bg);
-    height: 25px;
+    height: 26px;
     width: 100%;
     border-radius: 2em;
     border: none;
     cursor: pointer;
 }
 #toggle-switch {
-    margin: 3px 0;
+    margin: 0;
     background-color: var(--key-bg-2);
-    height: 17px;
-    width: 17px;
+    height: 16px;
+    width: 16px;
     border-radius: 2em;
-    transition: filter 355ms ease;
 }
 
 #screen-el {
     background-color: var(--screen-bg);
-    font-size: 32pt;
+    font-size: 29pt;
     text-align: right;
-    margin: 20px 0 0;
-    padding: 20px 20px 16px;
+    margin: 30px 0 0;
+    padding: 21px 25px 21px;
+    overflow-x: auto;
     border-radius: 10px;
 }
 #screen-num {
@@ -73,57 +91,74 @@ h1 {
 }
 
 #key-container {
-    display: grid;
-    grid: 
-    "a b c d" 55px
-    "e f g h" 55px
-    "i j k l" 55px
-    "m n o p" 55px
-    "q q r r" 55px;
-    gap: 16px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    // display: grid;
+    // grid: 
+    // "a b c d" 55px
+    // "e f g h" 55px
+    // "i j k l" 55px
+    // "m n o p" 55px
+    // "q q r r" 55px / 150px 150px 150px 150px;
+    // gap: 24px 20px;
     background-color: var(--btn-bg);
-    margin: 20px auto 0;
-    padding: 20px;
+    margin: 24px auto 0;
+    padding: 14px 24px 21px;
     border-radius: 10px;
+    max-width: 100%;
 }
+#key-container .key-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0 7px;
+}
+
 #key-container button {
+    width: 100%;
+    margin: 0 0 0 13px;
+    min-width: 60px;
     background-color: var(--key-bg-3);
     color: var(--text-dark);
     border: none;
-    border-bottom: 3px solid var(--key-shadow-3);
+    box-shadow: 0 4px 0 var(--key-shadow-3);
     border-radius: 5px;
-    width: 55px;
-    height: 60px;
     font-family: "League Spartan", sans-serif;
     font-size: 24pt;
     font-weight: 700;
-    padding: 6px 0 0;
     transition: filter 355ms ease;
+    height: 60px;
     cursor: pointer;
 }
-#key-container button p {
+#key-container .key-row > button:nth-child(1) {
     margin: 0;
+}
+
+#key-container .key-row button p {
+    margin: 8px 0 0;
 }
 
 #key-container #btn-del {
     background-color: var(--key-bg-1);
     color: var(--text-light);
-    border-color: var(--key-shadow-1);
-    font-size: 16pt;
+    box-shadow: 0 4px 0 var(--key-shadow-1);
 }
+#key-container #btn-del p {
+    margin: 3px 0 0;
+    font-size: 14pt;
+}
+
 #key-container #btn-reset {
-    width: 100%;
+    // margin: 0 13px 0 0;
     background-color: var(--key-bg-1);
     color: var(--text-light);
-    border-color: var(--key-shadow-1);
-    grid-column: span 2;
-    font-size: 16pt;
+    box-shadow: 0 4px 0 var(--key-shadow-1);
+    font-size: 15pt;
 }
 #key-container #btn-equal {
-    width: 100%;
     background-color: var(--key-bg-2);
     color: var(--text-light);
-    border-color: var(--key-shadow-2);
-    grid-column: span 2;
-    font-size: 16pt;
+    box-shadow: 0 4px 0 var(--key-shadow-2);
+    font-size: 24pt;
 }
